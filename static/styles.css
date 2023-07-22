@@ -1,5 +1,5 @@
 .list-group-item {
-  border: none; /* Add this line to remove the border for checklist items */
+  border: none;
 }
 
 .collapse-icon, .sublist-collapse-icon {
@@ -33,24 +33,4 @@
 .sublist-input input {
   flex: 1;
   margin-right: 5px;
-}
-
-
-.sublist-input {
-  display: flex;
-  align-items: center;
-  margin-top: 5px;
-}
-
-.sublist-input input {
-  flex: 1;
-  border: none; /* Remove all borders */
-  /* border-bottom: 1px solid #ccc; Add the bottom border */
-  padding: 5px; /* Add some padding for better appearance */
-}
-
-.sublist-input input:focus,
-.sublist-input input:active {
-  outline: none; /* Remove the focus/active outline */
-  border: none; /* Remove all borders during typing or focus */
 }

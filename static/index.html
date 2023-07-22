@@ -10,6 +10,7 @@
     <h1>Nested Checklist</h1>
     <div class="input-group mb-3">
       <input id="newItemInput" v-model="newItemText" type="text" class="form-control" placeholder="Add new item">
+      <button @click="addItem" class="btn btn-primary">Add</button>
     </div>
     <ul class="list-group">
       <checklist-item v-for="(item, index) in checklistData" :key="index" :item="item"></checklist-item>

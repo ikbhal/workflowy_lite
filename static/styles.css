@@ -1,36 +1,20 @@
-.list-group-item {
-  border: none;
+ul {
+  list-style-type: none;
+  padding-left: 20px;
 }
 
-.collapse-icon, .sublist-collapse-icon {
-  display: inline-block;
-  width: 20px;
-  text-align: center;
+li {
   cursor: pointer;
 }
 
-.collapse-icon.expand:before, .sublist-collapse-icon.sublist-expand:before {
-  content: "\25B6";
+.item {
+  border-bottom: 1px solid #ccc;
 }
 
-.collapse-icon.collapse:before, .sublist-collapse-icon.sublist-collapse:before {
-  content: "\25BC";
+.collapsed {
+  display: none;
 }
 
-.add-sublist-icon {
-  display: inline-block;
-  width: 20px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.sublist-input {
-  display: flex;
-  align-items: center;
-  margin-top: 5px;
-}
-
-.sublist-input input {
-  flex: 1;
-  margin-right: 5px;
+button {
+  margin-top: 10px;
 }

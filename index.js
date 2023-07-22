@@ -3,7 +3,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = 3006;
+const port = 3004;
 
 //static attach to express
 app.use(express.static(path.join(__dirname, 'static')));

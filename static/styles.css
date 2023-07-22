@@ -1,0 +1,32 @@
+.collapse-icon, .sublist-collapse-icon {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.collapse-icon.expand:before, .sublist-collapse-icon.sublist-expand:before {
+  content: "\25B6";
+}
+
+.collapse-icon.collapse:before, .sublist-collapse-icon.sublist-collapse:before {
+  content: "\25BC";
+}
+
+.add-sublist-icon {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sublist-input {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.sublist-input input {
+  flex: 1;
+  margin-right: 5px;
+}

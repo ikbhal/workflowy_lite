@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nested Checklist with Local Storage</title>
+  <title>Nested Checklist</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <div id="app" class="container">
@@ -12,15 +12,12 @@
       <input v-model="newItemText" @keyup.enter="addItem" type="text" class="form-control" placeholder="Add new item">
       <button @click="addItem" class="btn btn-primary">Add</button>
     </div>
-    <div id="checklistContainer">
-      <ul ref="sortableList" class="list-group">
-        <checklist-item v-for="(item, index) in checklistData" :key="index" :item="item" :itemIndex="index"></checklist-item>
-      </ul>
-    </div>
+    <ul class="list-group">
+      <checklist-item v-for="(item, index) in checklistData" :key="index" :item="item"></checklist-item>
+    </ul>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

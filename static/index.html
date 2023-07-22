@@ -3,14 +3,13 @@
 <head>
   <title>Nested Checklist</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div id="app" class="container">
     <h1>Nested Checklist</h1>
     <div class="input-group mb-3">
-      <input v-model="newItemText" @keyup.enter="addItem" type="text" class="form-control" placeholder="Add new item">
-      <button @click="addItem" class="btn btn-primary">Add</button>
+      <input id="newItemInput" v-model="newItemText" type="text" class="form-control" placeholder="Add new item">
     </div>
     <ul class="list-group">
       <checklist-item v-for="(item, index) in checklistData" :key="index" :item="item"></checklist-item>
